@@ -1,0 +1,22 @@
+dist: xenial
+language: node_js
+node_js:
+  - "10.2"
+sudo: enabled
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install nasm
+install:
+  - npm install --global gatsby-cli
+  - npm install
+  - npm run fetch_data
+script:
+  - gatsby build
+deploy:
+  provider: pages
+  repo: $GITHUB_PAGES_REPO
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master
+  verbose: true
