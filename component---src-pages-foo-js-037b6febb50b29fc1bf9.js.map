@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/foo.js"],"names":[],"mappings":"2FAAA,gCAEe,4BAAM","file":"component---src-pages-foo-js-037b6febb50b29fc1bf9.js","sourcesContent":["import React from 'react';\n\nexport default () => <h1>Page Foo</h1>;\n"],"sourceRoot":""}
